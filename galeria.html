@@ -6,15 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Galeria</title>
         <link rel="stylesheet" href="stylegaleria.css" />
-        
+        <!-- stylesheet do ikon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="app.js" async></script>
     </head>
     <body>
-             <ul class="nav">
-                  <li><a href="index.html" class="domek"><img src=images/domek.png width=50rem></a></li>
-                  <li><a href="news.asp" class="galeria">Galeria</a></li>
-                  <li><a href="contact.asp">Wideo</a></li>
-                  <li><a href="about.asp">Aktualności</a></li>
-            </ul>
+         <div class="nav" id="nav">
+              <a href="index.html" class="domek">
+                  <i class="fa fa-home"></i>
+              </a>
+              <a href="news.asp" class="galeria">Galeria</a>
+              <a href="contact.asp">Wideo</a>
+              <a href="about.asp">Aktualności</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+              </a>
+        </div>
         <br>
         <ul class="gallery">
             <li class="thumbnail">
@@ -72,6 +79,5 @@
             <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" class="popup__img">
                 
         </div>
-        <script src="app.js"></script>
     </body>
 </html>
